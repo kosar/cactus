@@ -30,3 +30,6 @@ target_link_libraries(cactus_embed PRIVATE cactus_core_lib)
 target_link_libraries(cactus_llm PRIVATE cactus_core_lib)
 target_link_libraries(cactus_tts PRIVATE cactus_core_lib)
 target_link_libraries(cactus_conversation_ffi PRIVATE cactus_core_lib)
+
+add_executable(cactus_server ../../offline_api/main_server.cpp)
+target_link_libraries(cactus_server PRIVATE cactus_core_lib)

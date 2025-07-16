@@ -1,10 +1,8 @@
 mkdir -p build
 cd build
-cmake ..
+cmake .. -DGGML_NUMA=OFF
 
 echo "Building the project..."
 make
 
 ln -sf ../../../cpp/ggml-llama.metallib default.metallib
-
-./cactus_llm chat

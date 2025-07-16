@@ -35,6 +35,7 @@
 #include <stdarg.h>
 #include <signal.h>
 #if defined(__gnu_linux__)
+#undef __gnu_linux__
 #include <syscall.h>
 #endif
 
